@@ -21,7 +21,9 @@ router.post('/', async (req, res) => {
             platform: req.body.platform,
             genre: req.body.genre,
             developer: req.body.developer,
-            type: req.body.type
+            type: req.body.type,
+            rawgId: req.body.rawgId,
+            rawgdata : req.body.rawgdata
         })
 
         res.json(newGame)

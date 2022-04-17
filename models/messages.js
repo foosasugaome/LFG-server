@@ -15,7 +15,7 @@ const messageSchema = mongoose.Schema({
     attachmentLink : {
         type : String
     }
-},{timestamp: true})
+},{timestamps: true})
 
 const partyBoardSchema = mongoose.Schema({
     partyId : {
@@ -24,6 +24,6 @@ const partyBoardSchema = mongoose.Schema({
         required: true
     },
     messages : [messageSchema]    
-},{timestamp: true})
+},{timestamps: true})
 
 module.exports = mongoose.model('MessageBoard', partyBoardSchema)

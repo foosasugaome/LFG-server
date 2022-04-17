@@ -7,7 +7,9 @@ const GameSchema = mongoose.Schema({
     platform: [String],
     genre: [String],
     developer: String,
-    type: String
-})
+    type: String,
+    rawgId : String,
+    rawgdata: [Object]
+},{timestamps: true})
 
 module.exports = mongoose.model('Game', GameSchema) 
