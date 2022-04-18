@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const res = require('express/lib/response')
 const db = require('../models')
