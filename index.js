@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001
 // middlewares
 app.use(cors())
 app.use(express.json())
-// app.use(morgan('dev'))
+app.use(morgan('dev'))
 
 const myMiddleWare = async (req, res, next) => {
   const games = JSON.parse(
